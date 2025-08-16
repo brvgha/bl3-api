@@ -24,6 +24,7 @@ export function connectMongo(db: Db) {
     Mongoose.set("strictQuery", true);
     Mongoose.connect(process.env.db as string);
     const mongoDb = Mongoose.connection;
+    // db.collection = mongoDb.collection("bookings");
 
     db.unAuthBookingsStore = unAuthBookingsStore;
     db.authBookingsStore = authBookingsStore;
