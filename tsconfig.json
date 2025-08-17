@@ -11,6 +11,11 @@
     "moduleResolution": "nodenext",
     "target": "esnext",
     "types": [],
+    "rootDir": "src", // where your .ts files live
+    "outDir": "dist", // where compiled .js files will go
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -41,5 +46,8 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": [
+    "src"
+  ]
 }
